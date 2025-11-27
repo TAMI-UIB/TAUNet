@@ -1,11 +1,11 @@
 # TAUNet: Transformer Assisted UNet for Marine Litter Detection on Sentinel-2 Imagery
 
-[EarthArXiv](https://eartharxiv.org/repository/view/10424/)
-
 This repository contains the implementation and additional resources for the following paper:
 
 **Transformer Assisted UNet for Marine Litter Detection on Sentinel-2 Imagery**  
 *Daniel Torres, Bartomeu Garau, Francesc Alcover, Ivan Pereira-Sánchez, Julia Navarro, Catalina Sbert, Joan Duran*  
+
+[![EarthArXiv](https://img.shields.io/badge/EarthArXiv-10424-green.svg)](https://eartharxiv.org/repository/view/10424/)
 
 ---
 
