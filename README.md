@@ -74,7 +74,8 @@ Run the following command:
    ```
 ---
 ## 🏗️ To-do's:
-Code and definitive checkpoints will be available soon.
+- [ ] Upload main codes.
+- [ ] Upload definitive checkpoints.
 <!--
 ---
 ## 📌 Citation
