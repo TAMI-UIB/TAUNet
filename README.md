@@ -74,7 +74,6 @@ Run the following command:
    ```
 ---
 ## 🏗️ To-do's:
-- [ ] Upload main codes.
 - [ ] Upload definitive checkpoints.
 <!--
 ---
