@@ -1,0 +1,10 @@
+name: FSO
+n_classes: 2
+channels: 6
+sampling: 2
+datamodule:
+  _target_: src.data.floatingobjects.FSO
+  root: ${oc.env:DATASET_PATH}/${data.name}
+  batch_size: ${model.train.batch_size}
+  num_workers: ${model.train.num_workers}
+  output_size: 64
