@@ -20,10 +20,6 @@ from datetime import date
 rootutils.setup_root(__file__, indicator=".project-root", pythonpath=True)
 
 from base import Experiment
-from src.utils.callbacks.check_parameter_gradient import GradientCheck
-from src.utils.callbacks.loss_logger import LossLogger
-from src.utils.callbacks.metric_logger import MetricLoggerRSSID
-from src.utils.callbacks.image_logger import ImageLogger
 os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
 print("CUDA_LAUNCH_BLOCKING =", os.environ.get("CUDA_LAUNCH_BLOCKING"))
 torch.autograd.set_detect_anomaly(True)
@@ -42,11 +38,7 @@ def train(cfg: DictConfig):
             name=cfg.nickname)
 
     default_callbacks = [
-                    MetricLoggerRSSID(),
-                    LossLogger(),
-                    #ImageLogger(n_classes=cfg.data.n_classes, num_samples=5),
                     instantiate(cfg.checkpoints),
-                    GradientCheck(),
                     RichModelSummary(3)
                          ]
 
