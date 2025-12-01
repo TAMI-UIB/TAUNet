@@ -49,8 +49,7 @@ def train(cfg: DictConfig):
                       callbacks=callback_list)
 
     trainer.fit(experiment, datamodule=data_loader)
-    print("TOT OKEY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
-    # data_loader = instantiate(cfg.dataset.datamodule, batch_size=1)
+
     # print(f'Best model path: {cfg.log_dir}/checkpoints/best.ckpt')
     # ckpt = torch.load(f'{cfg.log_dir}/checkpoints/best.ckpt', map_location=f'cuda:{cfg.devices[0]}', weights_only=False)
     # experiment.load_state_dict(ckpt['state_dict'])
